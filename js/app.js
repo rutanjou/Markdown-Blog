@@ -22,10 +22,10 @@
 			$("#md").html(html);
 		},
 		getjson:function(menu){
-			var url = "192.168.1.40:1337/menu.json";
+			var url = "http://192.168.1.40:1337";
 			var menus = menu.menu;
 			for(var i=0; i<menus.length;i++){
-				$("#menu").append("<li>" + "<a href= + url>" + menus[i].path + menus[i].title + "</li>");
+				$("#menu").append("<li>" + "<a href=>"+ url + menus[i].path  + menus[i].title + "</li>" );
 			}
 
 		
