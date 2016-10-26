@@ -12,10 +12,7 @@
 			.done(app.getjson)
 			.fail()
 			.always();
-
-
 		},
-	
 		ajaxDone:function(alice){
 			var converter = new showdown.Converter();
 			var html = converter.makeHtml(alice);
@@ -26,11 +23,7 @@
 			for(var i=0; i<menus.length;i++){
 				$("#menu").append('<li><a href="http://192.168.1.40:1337'+ menus[i].path+'">'+ menus[i].title +'</li>' );
 			}
-		
 		}
-        
-
-
     };
 
     $(document).ready(function(){
